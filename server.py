@@ -30,6 +30,10 @@ else:
 
   
 class index:
+    def GET(self):
+        imageBinary = open("/home/ubuntu/toy_server/egor.jpg",'rb').read()
+        return imageBinary
+
     def POST(self):
         x = web.input(myfile={})
 	
