@@ -1,3 +1,6 @@
+import web
+import webbrowser
+
 from PIL import Image
 import time
 import argparse
@@ -27,10 +30,6 @@ else:
 
   
 class index:
-    def GET(self):
-        return render.index()
-
-
     def POST(self):
         x = web.input(myfile={})
 	
